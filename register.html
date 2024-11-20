@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: aqua;
+            align-items: center;
+            text-align: center; */
+            background-image: url(https://images.pexels.com/photos/733852/pexels-photo-733852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .container{
+            padding: 10px;
+            margin: 20px;
+            margin-top: -30px;
+            background-color: rgb(0,0,0,0.1);
+            height: 700px;
+            width: 500px;
+            align-items: center;
+            margin-left: 550px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 1px gray ;
+            backdrop-filter: blur(3px);
+            
+
+        }
+        .container h1{
+            font-family: sans-serif;
+            color: white;
+        }
+        form{
+            align-items: center;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        input{
+            padding: 7px;
+            margin-bottom: 15px;
+            width: 250px;
+            border-radius: 20px;
+            border: none;
+            /* box-shadow: 0px 0px 10px 1px; */
+            box-shadow: 0px 0px 5px 0.1px;
+            margin-top: 5px;
+            /* background-color: #A3D8FF; */
+            background-color: rgb(0,0,0,0.1);
+        }
+        label{
+            padding: 5px;
+            margin: 20px;
+            margin-bottom: 10px;
+        }
+        .button{
+            padding: 10px;
+            font-size: 15px;
+            margin: 20px;
+            background-color: #4CC9FE;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 1px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+       .button:hover{
+            background-color: #37AFE1;
+            transform: scale(1.1);
+       }
+       .back{
+        padding: 0px;
+        margin: 0px;
+        margin-left: 20px;
+        
+        width: 30px;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+       }
+       .back:hover{
+        background-color: rgb(0,0,0,0.1);
+        transform: scale(1.1);
+        box-shadow: 0px 0px 1px 1px;
+        border: none;
+
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="home.html"><img src="back.png" alt="" style="height: 20px; margin-top: 20px; margin-bottom: 10px;" ></a>
+
+    </div>
+    <div class="container">
+        <h1><center><u>Registration Form</u></center></h1>
+        <form action="">
+            <label for="Name" style="margin-left: -160px;">First name :-</label><br>
+            <input type="text" placeholder="Enter Your name" required>
+            <br>
+            <label for="name" style="margin-left: -160px;">last name :-</label><br>
+            <input type="text" placeholder="Enter your last name " required>
+            <br>
+            <label for="number" style="margin-left: -125px;">Mobile number :-</label><br>
+            <input type="tel" placeholder="Enter mobile number" maxlength="10" pattern="\d{10}" required><br>
+            <label for="dob" style="margin-left: -135px;">Date of Birth :-</label><br>
+            <input type="date" ><br>
+            <label for="email" style="margin-left: -185px;">Email :-</label>
+            <br>
+            <input type="email" name="" id="" placeholder="Enter Email" required><br>
+            <label for="city" style="margin-left: -200px;">city :-</label><br>
+            <input type="text" name="" id="" placeholder="enter city name" required><br>
+            <label for="state" style="margin-left: -190px;">state :-</label>
+            <br>
+            <input type="text" placeholder="enter state" required>
+            <br>
+            <button class="button">submit</button>
+        </form>
+
+        <p style="color: black; font-family: sans-serif; margin-left: 125px;">Alredy have an account <a class="" href="Login.html" style="color: blue;">Login here</a></p>
+    </div>
+</body>
+</html>
